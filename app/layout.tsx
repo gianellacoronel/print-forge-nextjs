@@ -34,7 +34,7 @@ export default function RootLayout({
                 className="w-[200px] h-auto hidden md:block"
               />
               {/* Mobile logo */}
-              <img
+              <Image
                 src="/printforge-logo-icon.svg"
                 alt="PrintForge Logo"
                 className="w-[40px] h-auto block md:hidden"
