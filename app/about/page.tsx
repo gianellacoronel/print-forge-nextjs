@@ -1,5 +1,4 @@
-import Image from "next/image";
-import heroImage from "@/public/hero-image-square.png";
+import HeroImageSquare from "@/public/hero-image-square.png";
 
 export default function AboutPage() {
   return (
@@ -11,12 +10,9 @@ export default function AboutPage() {
 
         <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
           <div className="relative h-[300px] w-full">
-            <Image
-              // src="/hero-image-square.png"
-              src={heroImage}
+            <img
+              src={HeroImageSquare.src}
               alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
-              width={742}
-              height={742}
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
           </div>
@@ -27,7 +23,7 @@ export default function AboutPage() {
             >
               About PrintForge
             </p>
-            <h2 className="mb-4 text-2xl font-semibold">
+            <h2 className="mb-4 text-2xl font-semibold font-montserrat-alternates">
               Empowering Makers Worldwide
             </h2>
             <p className="mb-4 text-gray-700">
@@ -53,21 +49,27 @@ export default function AboutPage() {
           </h2>
           <div className="grid gap-6 md:gap-0 md:grid-cols-3">
             <article className="p-6 bg-white">
-              <h3 className="mb-3 text-xl font-semibold">100K+ Models</h3>
+              <h3 className="mb-3 text-xl font-semibold font-montserrat-alternates">
+                100K+ Models
+              </h3>
               <p className="text-gray-600">
                 Access our vast library of community-created 3D models, from
                 practical tools to artistic creations.
               </p>
             </article>
             <article className="p-6 bg-white border-gray-400 md:border-x">
-              <h3 className="mb-3 text-xl font-semibold">Active Community</h3>
+              <h3 className="mb-3 text-xl font-semibold font-montserrat-alternates">
+                Active Community
+              </h3>
               <p className="text-gray-600">
                 Join thousands of makers who share tips, provide feedback, and
                 collaborate on projects.
               </p>
             </article>
             <article className="p-6 bg-white">
-              <h3 className="mb-3 text-xl font-semibold">Free to Use</h3>
+              <h3 className="mb-3 text-xl font-semibold font-montserrat-alternates">
+                Free to Use
+              </h3>
               <p className="text-gray-600">
                 Most models are free to download, with optional premium features
                 for power users.
