@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import Link from "next/link";
+import type { RootLayoutProps } from "@/app/types";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
@@ -15,11 +16,7 @@ const montserratAlternates = Montserrat_Alternates({
   variable: "--font-montserrat-alternates",
 });
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
