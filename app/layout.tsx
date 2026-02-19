@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 
@@ -27,7 +28,7 @@ export default function RootLayout({
           <nav className="flex justify-between px-6 py-4">
             <div className="relative">
               {/* Desktop logo */}
-              <img
+              <Image
                 src="/printforge-logo.svg"
                 alt="PrintForge Logo"
                 className="w-[200px] h-auto hidden md:block"
