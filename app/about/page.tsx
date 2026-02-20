@@ -1,4 +1,5 @@
 import HeroImageSquare from "@/public/hero-image-square.png";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -10,7 +11,7 @@ export default function AboutPage() {
 
         <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
           <div className="relative h-[300px] w-full">
-            <img
+            <Image
               src={HeroImageSquare.src}
               alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
@@ -88,14 +89,14 @@ export default function AboutPage() {
             At PrintForge, we believe that 3D printing is revolutionizing the
             way we create, prototype, and manufacture. Our platform serves as a
             bridge between designers and makers, enabling the sharing of
-            knowledge and creativity that pushes the boundaries of what's
+            knowledge and creativity that pushes the boundaries of what&apos;s
             possible with 3D printing.
           </p>
           <p className="text-gray-700">
-            Whether you're a hobbyist looking for your next weekend project, an
-            educator seeking teaching materials, or a professional designer
-            wanting to share your creations, PrintForge provides the tools and
-            community to support your journey in 3D printing.
+            Whether you&apos;re a hobbyist looking for your next weekend
+            project, an educator seeking teaching materials, or a professional
+            designer wanting to share your creations, PrintForge provides the
+            tools and community to support your journey in 3D printing.
           </p>
         </div>
       </section>

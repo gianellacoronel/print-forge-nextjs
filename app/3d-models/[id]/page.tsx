@@ -2,6 +2,7 @@ import Pill from "@/app/components/Pill";
 import type { ModelDetailPageProps } from "@/app/types";
 import { getModelById } from "@/app/lib/models";
 import placeholderImg from "@/public/placeholder.png";
+import Image from "next/image";
 
 export default async function ModelDetailPage({
   params,
@@ -14,7 +15,7 @@ export default async function ModelDetailPage({
       <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {/* Image Section */}
         <figure className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
-          <img
+          <Image
             src={placeholderImg.src}
             alt={`3D model of ${model.name}`}
             className="absolute inset-0 object-cover w-full h-full"
@@ -34,7 +35,7 @@ export default async function ModelDetailPage({
           </div>
           <h1 className="mb-6 text-4xl font-bold">{model.name}</h1>
 
-          <Pill className="mb-6 w-fit" role="status" aria-label="Category">
+          <Pill className="mb-6 w-fit" aria-label="Category">
             {model.category}
           </Pill>
 
