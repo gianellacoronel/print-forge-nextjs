@@ -31,6 +31,8 @@ export default function Home() {
           src={HeroImage.src}
           className="w-[350px] h-auto rounded-lg"
           alt="Hero Image"
+          width={70}
+          height={70}
         />
       </section>
     </main>
