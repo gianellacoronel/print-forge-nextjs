@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Pill from "./Pill";
 import { ModelCardProps } from "@/app/types";
-import placeholderImg from "@/public/placeholder.png";
 
 export default function ModelCard({ model }: ModelCardProps) {
   return (
@@ -14,13 +13,6 @@ export default function ModelCard({ model }: ModelCardProps) {
         className="overflow-hidden transition-shadow bg-white rounded-lg shadow-md hover:shadow-lg"
         role="article"
       >
-        <div className="relative aspect-square">
-          <img
-            src={placeholderImg.src}
-            alt={model.name}
-            className="absolute inset-0 object-cover w-full h-full"
-          />
-        </div>
         <div className="p-4">
           <div className="flex justify-between mb-2 min-h-[3.5rem]">
             <h2

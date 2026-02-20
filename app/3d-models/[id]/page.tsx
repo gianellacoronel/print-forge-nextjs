@@ -1,7 +1,6 @@
 import Pill from "@/app/components/Pill";
 import type { ModelDetailPageProps } from "@/app/types";
 import { getModelById } from "@/app/lib/models";
-import placeholderImg from "@/public/placeholder.png";
 import Image from "next/image";
 
 export default async function ModelDetailPage({
@@ -14,13 +13,6 @@ export default async function ModelDetailPage({
     <div className="container max-w-6xl px-4 py-8 mx-auto">
       <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {/* Image Section */}
-        <figure className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
-          <Image
-            src={placeholderImg.src}
-            alt={`3D model of ${model.name}`}
-            className="absolute inset-0 object-cover w-full h-full"
-          />
-        </figure>
 
         {/* Content Section */}
         <section className="flex flex-col justify-center h-full">
