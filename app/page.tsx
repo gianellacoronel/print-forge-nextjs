@@ -1,6 +1,5 @@
 import Link from "next/link";
 import HeroImage from "@/public/hero-image.png";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -27,7 +26,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Image
+        <img
           src={HeroImage.src}
           className="w-[350px] h-auto rounded-lg"
           alt="Hero Image"

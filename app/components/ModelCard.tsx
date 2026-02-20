@@ -36,6 +36,12 @@ export default function ModelCard({ model }: ModelCardProps) {
           <div className="mt-2">
             <Pill>{model.category}</Pill>
           </div>
+          <div
+            className="flex items-center mt-2 text-gray-600"
+            aria-label={`${model.likes} likes`}
+          >
+            <span>{model.likes}</span>
+          </div>
         </div>
       </div>
     </Link>
